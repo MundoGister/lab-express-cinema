@@ -6,7 +6,7 @@ const movies = require('./movies.data');
 require('../configs/db.config');
 
 movieModel.insertMany(movies)
-    .then( () => {
+    .then( data => {
         console.info("Ready");
         mongoose.connection.close(); // Close connection
     })
