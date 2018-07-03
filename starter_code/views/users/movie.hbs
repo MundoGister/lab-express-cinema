@@ -1,0 +1,36 @@
+<main class="container">
+    <section>
+        <article class="row">
+            
+            <div>
+                {{movie.title}}
+            </div>
+            <div>
+                {{movie.director}}
+            </div>
+            <div>
+                {{movie.description}}
+            </div>
+            <div>
+                <ul>
+                    {{#each movie.stars}}
+                        <li>
+                            {{this}}
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    {{#each movie.showtimes}}
+                        {{this}}
+                    {{/each}}
+                </ul>
+            </div>
+            <div>
+                <img src="{{movie.image}}" alt="">
+            </div>
+
+        </article>
+    </section>
+</main>

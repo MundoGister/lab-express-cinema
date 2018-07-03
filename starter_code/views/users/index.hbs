@@ -1,0 +1,13 @@
+<main class="container">
+    <h1>Lab Cinema</h1>
+
+    <section>
+        {{#each movies as movie}}
+            <article class="">
+                <img src="{{movie.image}}" alt=< "{{movie.title}}">
+                <p class="">{{movie.title}}</p>
+                <a href="movies/{{movie.id}}">See more</a>
+            </article>
+        {{/each}}
+    </section>
+</main>
